@@ -11,6 +11,8 @@
 2. Подписка на рестарт. В этом случае в саге диспатчится экшн генерации стрелки.
 
 ```
+git clone https://github.com/PttRulez/test-wisebits.git
+cd test-wisebits
 npm install
 npm start
 ```
