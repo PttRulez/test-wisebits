@@ -42,7 +42,7 @@ function App() {
 
 	return (
 		<div className={styles.wrapper}>
-			<div>
+			<div className={styles.score}>
 				<p>Score: {score}</p>
 			</div>
 			<div className={styles.arrow}>{ARROWS_MAP[currentArrow]}</div>

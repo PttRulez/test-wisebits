@@ -1,3 +1,4 @@
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -7,20 +8,22 @@
   height: 100vh;
 }
 
-.arrow {
+.score {
+  height: 50px;
   font-size: 36px;
+}
+
+.arrow {
+  font-size: 100px;
 }
 
 .hearts {
   display: flex;
-  height: 30px;
+  column-gap: 10px;
+  font-size: 50px;
   align-items: center;
-}
-
-.heart {
-  height: 20px;
-  width: 20px;
   color: orangered;
+  height: 50px;
 }
 
 .result {
@@ -28,55 +31,31 @@
   display: flex;
   align-items: center;
   column-gap: 10px;
+  font-size: 36px;
 
   button {
     background-color: #6E6D70;
     border-radius: 100px;
-    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
+      0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
     color: #DFDEDF;
     cursor: pointer;
     display: inline-block;
-    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    font-size: 24px;
     padding: 7px 20px;
     text-align: center;
     text-decoration: none;
     transition: all 250ms;
     border: 0;
-    font-size: 12px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
   }
 
   button:hover {
-    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+      0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
     transform: scale(1.05) rotate(-1deg);
   }
 }
-
-
-//<!-- HTML !-->
-//<button class="button-12" role="button">Button 12</button>
-//
-///* CSS */
-//.button-12 {
-//  display: flex;
-//  flex-direction: column;
-//  align-items: center;
-//  padding: 6px 14px;
-//  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-//  border-radius: 6px;
-//  border: none;
-//
-//  background: #6E6D70;
-//  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
-//  color: #DFDEDF;
-//  user-select: none;
-//  -webkit-user-select: none;
-//  touch-action: manipulation;
-//}
-//
-//.button-12:focus {
-//  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-//  outline: 0;
-//}
