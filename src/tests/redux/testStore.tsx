@@ -25,7 +25,6 @@ export const setupStore = (preloadedState?: PreloadedState<RootState>) => {
     preloadedState
   });
 
-  // мокаем dispatch, чтобы потом использовать в тестах, при этом он не теряет свой функционал
   const origDispatch = store.dispatch;
   store.dispatch = jest.fn(origDispatch)
 

@@ -1,9 +1,9 @@
-import { delay, put, select, takeEvery, takeLatest} from 'redux-saga/effects';
+import { call, delay, put, select, takeEvery, takeLatest} from 'redux-saga/effects';
 import {arrowTimedOut, refreshArrow} from '../store/arrowSlice';
-
+import {selectArrowState} from '../store/selectors';
 
 export function* refreshWorker() {
-	const { won, lost } = yield select(state => state.arrow);
+	const { won, lost } = yield select(selectArrowState);
 	yield delay(3000);
 	if (!won && !lost) {
 		yield put(arrowTimedOut());
@@ -20,7 +20,6 @@ export function* watchRefreshArrow() {
 }
 
 export function* watchRestart() {
-	console.log('restarted')
 	yield takeEvery('arrow/restart', restartWorker);
 }
 
